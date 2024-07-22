@@ -1,4 +1,4 @@
-package vn.hoidanit.laptopshop.service.validator;
+package org.devanktu.cleanfruits.validator;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
@@ -10,7 +10,6 @@ import jakarta.validation.Constraint;
 import jakarta.validation.Payload;
 
 @Constraint(validatedBy = RegisterValidator.class)
-@Target({ ElementType.TYPE }) // Adjusted to apply to the class level
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 public @interface RegisterChecked {

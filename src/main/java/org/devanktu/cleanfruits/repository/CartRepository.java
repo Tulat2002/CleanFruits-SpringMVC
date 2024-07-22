@@ -1,2 +1,11 @@
-package org.devanktu.cleanfruits.repository;public class CartRepository {
+package org.devanktu.cleanfruits.repository;
+
+import org.devanktu.cleanfruits.domain.Cart;
+import org.devanktu.cleanfruits.domain.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface CartRepository extends JpaRepository<Cart, Long> {
+    Cart findByUser(User user);
 }

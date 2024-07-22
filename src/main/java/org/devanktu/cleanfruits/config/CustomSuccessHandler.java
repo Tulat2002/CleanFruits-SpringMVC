@@ -20,8 +20,8 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-@Configuration
-public class CustomSuccessHandle implements AuthenticationSuccessHandler {
+
+public class CustomSuccessHandler implements AuthenticationSuccessHandler {
 
     @Autowired
     private UserService userService;
@@ -81,6 +81,5 @@ public class CustomSuccessHandle implements AuthenticationSuccessHandler {
         clearAuthenticationAttributes(request, authentication);
 
     }
-
 
 }
